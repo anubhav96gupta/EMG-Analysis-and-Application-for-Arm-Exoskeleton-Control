@@ -1,0 +1,485 @@
+
+Code.elf:     file format elf32-avr
+
+Sections:
+Idx Name          Size      VMA       LMA       File off  Algn
+  0 .data         00000000  00800100  000002ee  00000382  2**0
+                  CONTENTS, ALLOC, LOAD, DATA
+  1 .text         000002ee  00000000  00000000  00000094  2**1
+                  CONTENTS, ALLOC, LOAD, READONLY, CODE
+  2 .bss          0000000e  00800100  00800100  00000382  2**0
+                  ALLOC
+  3 .stab         000006cc  00000000  00000000  00000384  2**2
+                  CONTENTS, READONLY, DEBUGGING
+  4 .stabstr      00000097  00000000  00000000  00000a50  2**0
+                  CONTENTS, READONLY, DEBUGGING
+  5 .comment      0000002f  00000000  00000000  00000ae7  2**0
+                  CONTENTS, READONLY
+  6 .debug_aranges 00000020  00000000  00000000  00000b16  2**0
+                  CONTENTS, READONLY, DEBUGGING
+  7 .debug_info   000002a6  00000000  00000000  00000b36  2**0
+                  CONTENTS, READONLY, DEBUGGING
+  8 .debug_abbrev 00000131  00000000  00000000  00000ddc  2**0
+                  CONTENTS, READONLY, DEBUGGING
+  9 .debug_line   000001dc  00000000  00000000  00000f0d  2**0
+                  CONTENTS, READONLY, DEBUGGING
+ 10 .debug_frame  00000024  00000000  00000000  000010ec  2**2
+                  CONTENTS, READONLY, DEBUGGING
+ 11 .debug_str    00000109  00000000  00000000  00001110  2**0
+                  CONTENTS, READONLY, DEBUGGING
+ 12 .debug_loc    00000110  00000000  00000000  00001219  2**0
+                  CONTENTS, READONLY, DEBUGGING
+ 13 .debug_ranges 00000010  00000000  00000000  00001329  2**0
+                  CONTENTS, READONLY, DEBUGGING
+
+Disassembly of section .text:
+
+00000000 <__vectors>:
+   0:	0c 94 56 00 	jmp	0xac	; 0xac <__ctors_end>
+   4:	0c 94 68 00 	jmp	0xd0	; 0xd0 <__bad_interrupt>
+   8:	0c 94 68 00 	jmp	0xd0	; 0xd0 <__bad_interrupt>
+   c:	0c 94 68 00 	jmp	0xd0	; 0xd0 <__bad_interrupt>
+  10:	0c 94 68 00 	jmp	0xd0	; 0xd0 <__bad_interrupt>
+  14:	0c 94 68 00 	jmp	0xd0	; 0xd0 <__bad_interrupt>
+  18:	0c 94 68 00 	jmp	0xd0	; 0xd0 <__bad_interrupt>
+  1c:	0c 94 68 00 	jmp	0xd0	; 0xd0 <__bad_interrupt>
+  20:	0c 94 68 00 	jmp	0xd0	; 0xd0 <__bad_interrupt>
+  24:	0c 94 68 00 	jmp	0xd0	; 0xd0 <__bad_interrupt>
+  28:	0c 94 68 00 	jmp	0xd0	; 0xd0 <__bad_interrupt>
+  2c:	0c 94 68 00 	jmp	0xd0	; 0xd0 <__bad_interrupt>
+  30:	0c 94 68 00 	jmp	0xd0	; 0xd0 <__bad_interrupt>
+  34:	0c 94 68 00 	jmp	0xd0	; 0xd0 <__bad_interrupt>
+  38:	0c 94 68 00 	jmp	0xd0	; 0xd0 <__bad_interrupt>
+  3c:	0c 94 68 00 	jmp	0xd0	; 0xd0 <__bad_interrupt>
+  40:	0c 94 68 00 	jmp	0xd0	; 0xd0 <__bad_interrupt>
+  44:	0c 94 68 00 	jmp	0xd0	; 0xd0 <__bad_interrupt>
+  48:	0c 94 68 00 	jmp	0xd0	; 0xd0 <__bad_interrupt>
+  4c:	0c 94 68 00 	jmp	0xd0	; 0xd0 <__bad_interrupt>
+  50:	0c 94 68 00 	jmp	0xd0	; 0xd0 <__bad_interrupt>
+  54:	0c 94 68 00 	jmp	0xd0	; 0xd0 <__bad_interrupt>
+  58:	0c 94 68 00 	jmp	0xd0	; 0xd0 <__bad_interrupt>
+  5c:	0c 94 68 00 	jmp	0xd0	; 0xd0 <__bad_interrupt>
+  60:	0c 94 68 00 	jmp	0xd0	; 0xd0 <__bad_interrupt>
+  64:	0c 94 68 00 	jmp	0xd0	; 0xd0 <__bad_interrupt>
+  68:	0c 94 68 00 	jmp	0xd0	; 0xd0 <__bad_interrupt>
+  6c:	0c 94 68 00 	jmp	0xd0	; 0xd0 <__bad_interrupt>
+  70:	0c 94 68 00 	jmp	0xd0	; 0xd0 <__bad_interrupt>
+  74:	0c 94 68 00 	jmp	0xd0	; 0xd0 <__bad_interrupt>
+  78:	0c 94 68 00 	jmp	0xd0	; 0xd0 <__bad_interrupt>
+  7c:	0c 94 68 00 	jmp	0xd0	; 0xd0 <__bad_interrupt>
+  80:	0c 94 68 00 	jmp	0xd0	; 0xd0 <__bad_interrupt>
+  84:	0c 94 68 00 	jmp	0xd0	; 0xd0 <__bad_interrupt>
+  88:	0c 94 68 00 	jmp	0xd0	; 0xd0 <__bad_interrupt>
+  8c:	0c 94 68 00 	jmp	0xd0	; 0xd0 <__bad_interrupt>
+  90:	0c 94 68 00 	jmp	0xd0	; 0xd0 <__bad_interrupt>
+  94:	0c 94 68 00 	jmp	0xd0	; 0xd0 <__bad_interrupt>
+  98:	0c 94 68 00 	jmp	0xd0	; 0xd0 <__bad_interrupt>
+  9c:	0c 94 68 00 	jmp	0xd0	; 0xd0 <__bad_interrupt>
+  a0:	0c 94 68 00 	jmp	0xd0	; 0xd0 <__bad_interrupt>
+  a4:	0c 94 68 00 	jmp	0xd0	; 0xd0 <__bad_interrupt>
+  a8:	0c 94 68 00 	jmp	0xd0	; 0xd0 <__bad_interrupt>
+
+000000ac <__ctors_end>:
+  ac:	11 24       	eor	r1, r1
+  ae:	1f be       	out	0x3f, r1	; 63
+  b0:	cf ef       	ldi	r28, 0xFF	; 255
+  b2:	da e0       	ldi	r29, 0x0A	; 10
+  b4:	de bf       	out	0x3e, r29	; 62
+  b6:	cd bf       	out	0x3d, r28	; 61
+
+000000b8 <__do_clear_bss>:
+  b8:	21 e0       	ldi	r18, 0x01	; 1
+  ba:	a0 e0       	ldi	r26, 0x00	; 0
+  bc:	b1 e0       	ldi	r27, 0x01	; 1
+  be:	01 c0       	rjmp	.+2      	; 0xc2 <.do_clear_bss_start>
+
+000000c0 <.do_clear_bss_loop>:
+  c0:	1d 92       	st	X+, r1
+
+000000c2 <.do_clear_bss_start>:
+  c2:	ae 30       	cpi	r26, 0x0E	; 14
+  c4:	b2 07       	cpc	r27, r18
+  c6:	e1 f7       	brne	.-8      	; 0xc0 <.do_clear_bss_loop>
+  c8:	0e 94 6a 00 	call	0xd4	; 0xd4 <main>
+  cc:	0c 94 75 01 	jmp	0x2ea	; 0x2ea <_exit>
+
+000000d0 <__bad_interrupt>:
+  d0:	0c 94 00 00 	jmp	0	; 0x0 <__vectors>
+
+000000d4 <main>:
+uint32_t adc_mean,adc_max;
+
+int main(void)
+{	
+	
+	CLKSEL0=0x35;//  EXSUT1:0=10 ...ALSO ENABLE LOW POWER CRYSTAL AND SELECT CRYSTAL
+  d4:	85 e3       	ldi	r24, 0x35	; 53
+  d6:	80 93 c5 00 	sts	0x00C5, r24
+	CLKSEL1=0x0F; // EXCKSEL3:0= 1111 ;
+  da:	8f e0       	ldi	r24, 0x0F	; 15
+  dc:	80 93 c6 00 	sts	0x00C6, r24
+	UHWCON = 0x01; // USB PAD REGULATOR ENABLE.
+  e0:	81 e0       	ldi	r24, 0x01	; 1
+  e2:	80 93 d7 00 	sts	0x00D7, r24
+
+	//General configuration
+	DDRB=0xFF;
+  e6:	2f ef       	ldi	r18, 0xFF	; 255
+  e8:	24 b9       	out	0x04, r18	; 4
+	DDRD=0xFF;
+  ea:	2a b9       	out	0x0a, r18	; 10
+	
+	//configure  ADC
+	ADCSRA=0x87;//enable adc and prescalar 128
+  ec:	87 e8       	ldi	r24, 0x87	; 135
+  ee:	80 93 7a 00 	sts	0x007A, r24
+	DIDR0=0xf3;
+  f2:	83 ef       	ldi	r24, 0xF3	; 243
+  f4:	80 93 7e 00 	sts	0x007E, r24
+	DIDR2=0x3f;
+  f8:	8f e3       	ldi	r24, 0x3F	; 63
+  fa:	80 93 7d 00 	sts	0x007D, r24
+	ADMUX=0xC1;//internal vref, RIGHT ADJUST and adc1
+  fe:	81 ec       	ldi	r24, 0xC1	; 193
+ 100:	80 93 7c 00 	sts	0x007C, r24
+	
+	//Configure TIMER1
+	TCCR1A|=(1<<COM1A1)|(1<<COM1B1)|(1<<WGM11);        //NON Inverted PWM
+ 104:	e0 e8       	ldi	r30, 0x80	; 128
+ 106:	f0 e0       	ldi	r31, 0x00	; 0
+ 108:	80 81       	ld	r24, Z
+ 10a:	82 6a       	ori	r24, 0xA2	; 162
+ 10c:	80 83       	st	Z, r24
+	TCCR1B|=(1<<WGM13)|(1<<WGM12)|(1<<CS11)|(1<<CS10); //PRESCALER=64 MODE 14(FAST PWM)
+ 10e:	e1 e8       	ldi	r30, 0x81	; 129
+ 110:	f0 e0       	ldi	r31, 0x00	; 0
+ 112:	80 81       	ld	r24, Z
+ 114:	8b 61       	ori	r24, 0x1B	; 27
+ 116:	80 83       	st	Z, r24
+	ICR1=624;										   //fPWM=50Hz (Period = 20ms Standard).
+ 118:	80 e7       	ldi	r24, 0x70	; 112
+ 11a:	92 e0       	ldi	r25, 0x02	; 2
+ 11c:	90 93 87 00 	sts	0x0087, r25
+ 120:	80 93 86 00 	sts	0x0086, r24
+	DDRB=0xFF;										   //PWM Pins as Out
+ 124:	24 b9       	out	0x04, r18	; 4
+	int sendByte;
+	//Configure Serial
+	UCSR1B=0x18;									   // Turn on the transmission and reception circuitry
+ 126:	88 e1       	ldi	r24, 0x18	; 24
+ 128:	80 93 c9 00 	sts	0x00C9, r24
+	UCSR1C=0x06;									   // Use 8- bit character sizes
+ 12c:	86 e0       	ldi	r24, 0x06	; 6
+ 12e:	80 93 ca 00 	sts	0x00CA, r24
+	UBRR1= 12;										   //BAud Rate 9600
+ 132:	8c e0       	ldi	r24, 0x0C	; 12
+ 134:	90 e0       	ldi	r25, 0x00	; 0
+ 136:	90 93 cd 00 	sts	0x00CD, r25
+ 13a:	80 93 cc 00 	sts	0x00CC, r24
+		//collect ADC values
+		adc_max=0;
+		for (j=0;j<100;j++)
+		{
+			//Labview Data
+			sendByte=ADC;
+ 13e:	e8 e7       	ldi	r30, 0x78	; 120
+ 140:	f0 e0       	ldi	r31, 0x00	; 0
+			UCSR1B=0x08;
+ 142:	49 ec       	ldi	r20, 0xC9	; 201
+ 144:	50 e0       	ldi	r21, 0x00	; 0
+			while (( UCSR1A & (1 << UDRE1 )) == 0) {};
+			// Do nothing until UDR is ready for more data to be written to it
+			UDR1 =sendByte;
+ 146:	2e ec       	ldi	r18, 0xCE	; 206
+ 148:	30 e0       	ldi	r19, 0x00	; 0
+			
+			for (i=0;i<255;i++)
+			{
+				ADCSRA= 0xc7;						    //ADCSRA | 0x40;//ENABLE,SOC AND PRESCALAR
+ 14a:	aa e7       	ldi	r26, 0x7A	; 122
+ 14c:	b0 e0       	ldi	r27, 0x00	; 0
+ 14e:	0f 2e       	mov	r0, r31
+ 150:	f7 ec       	ldi	r31, 0xC7	; 199
+ 152:	df 2e       	mov	r13, r31
+ 154:	f0 2d       	mov	r31, r0
+		adc_max=0;
+		for (j=0;j<100;j++)
+		{
+			//Labview Data
+			sendByte=ADC;
+			UCSR1B=0x08;
+ 156:	68 94       	set
+ 158:	cc 24       	eor	r12, r12
+ 15a:	c3 f8       	bld	r12, 3
+			OCR1A=47;				//120 degree
+			_delay_ms(800);
+		}
+		else if(adc_mean>0x80) //0.25V
+		{
+				OCR1A=20;	
+ 15c:	68 e8       	ldi	r22, 0x88	; 136
+ 15e:	70 e0       	ldi	r23, 0x00	; 0
+			for(int i=0;i<3;i++)
+			_delay_ms(800);			//180 degree
+		}
+		else if(adc_mean>0xB4)	// 0.450V
+		{
+			OCR1A=47;				//120 degree
+ 160:	0f 2e       	mov	r0, r31
+ 162:	ff e2       	ldi	r31, 0x2F	; 47
+ 164:	2f 2e       	mov	r2, r31
+ 166:	31 2c       	mov	r3, r1
+ 168:	f0 2d       	mov	r31, r0
+		}
+		adc_mean=adc_max;
+		//PWM
+		if(adc_mean>0x118)	// 0.7V
+		{
+			OCR1A=71;	
+ 16a:	0f 2e       	mov	r0, r31
+ 16c:	f7 e4       	ldi	r31, 0x47	; 71
+ 16e:	ef 2e       	mov	r14, r31
+ 170:	f1 2c       	mov	r15, r1
+ 172:	f0 2d       	mov	r31, r0
+		}
+		else
+		{
+			
+		}
+			OCR1A=14;				//0   degree		
+ 174:	0e e0       	ldi	r16, 0x0E	; 14
+ 176:	10 e0       	ldi	r17, 0x00	; 0
+	UCSR1C=0x06;									   // Use 8- bit character sizes
+	UBRR1= 12;										   //BAud Rate 9600
+	while (1)
+	{	
+		//collect ADC values
+		adc_max=0;
+ 178:	10 92 06 01 	sts	0x0106, r1
+ 17c:	10 92 07 01 	sts	0x0107, r1
+ 180:	10 92 08 01 	sts	0x0108, r1
+ 184:	10 92 09 01 	sts	0x0109, r1
+		for (j=0;j<100;j++)
+ 188:	10 92 01 01 	sts	0x0101, r1
+ 18c:	10 92 00 01 	sts	0x0100, r1
+		{
+			//Labview Data
+			sendByte=ADC;
+ 190:	80 81       	ld	r24, Z
+ 192:	91 81       	ldd	r25, Z+1	; 0x01
+			UCSR1B=0x08;
+ 194:	ea 01       	movw	r28, r20
+ 196:	c8 82       	st	Y, r12
+			while (( UCSR1A & (1 << UDRE1 )) == 0) {};
+ 198:	c8 ec       	ldi	r28, 0xC8	; 200
+ 19a:	d0 e0       	ldi	r29, 0x00	; 0
+ 19c:	b8 80       	ld	r11, Y
+ 19e:	b5 fe       	sbrs	r11, 5
+ 1a0:	fb cf       	rjmp	.-10     	; 0x198 <main+0xc4>
+			// Do nothing until UDR is ready for more data to be written to it
+			UDR1 =sendByte;
+ 1a2:	e9 01       	movw	r28, r18
+ 1a4:	88 83       	st	Y, r24
+			
+			for (i=0;i<255;i++)
+ 1a6:	10 92 05 01 	sts	0x0105, r1
+ 1aa:	10 92 04 01 	sts	0x0104, r1
+			{
+				ADCSRA= 0xc7;						    //ADCSRA | 0x40;//ENABLE,SOC AND PRESCALAR
+ 1ae:	dc 92       	st	X, r13
+	#else
+		//round up by default
+		__ticks_dc = (uint32_t)(ceil(fabs(__tmp)));
+	#endif
+
+	__builtin_avr_delay_cycles(__ticks_dc);
+ 1b0:	dd e0       	ldi	r29, 0x0D	; 13
+ 1b2:	da 95       	dec	r29
+ 1b4:	f1 f7       	brne	.-4      	; 0x1b2 <main+0xde>
+ 1b6:	00 00       	nop
+				_delay_us(20);
+				while (!ADIF);
+				if (adc_max<ADC)
+ 1b8:	80 81       	ld	r24, Z
+ 1ba:	91 81       	ldd	r25, Z+1	; 0x01
+ 1bc:	2c 01       	movw	r4, r24
+ 1be:	61 2c       	mov	r6, r1
+ 1c0:	71 2c       	mov	r7, r1
+ 1c2:	80 90 06 01 	lds	r8, 0x0106
+ 1c6:	90 90 07 01 	lds	r9, 0x0107
+ 1ca:	a0 90 08 01 	lds	r10, 0x0108
+ 1ce:	b0 90 09 01 	lds	r11, 0x0109
+ 1d2:	84 14       	cp	r8, r4
+ 1d4:	95 04       	cpc	r9, r5
+ 1d6:	a6 04       	cpc	r10, r6
+ 1d8:	b7 04       	cpc	r11, r7
+ 1da:	68 f4       	brcc	.+26     	; 0x1f6 <main+0x122>
+				{
+					adc_max=ADC;
+ 1dc:	80 81       	ld	r24, Z
+ 1de:	91 81       	ldd	r25, Z+1	; 0x01
+ 1e0:	4c 01       	movw	r8, r24
+ 1e2:	a1 2c       	mov	r10, r1
+ 1e4:	b1 2c       	mov	r11, r1
+ 1e6:	80 92 06 01 	sts	0x0106, r8
+ 1ea:	90 92 07 01 	sts	0x0107, r9
+ 1ee:	a0 92 08 01 	sts	0x0108, r10
+ 1f2:	b0 92 09 01 	sts	0x0109, r11
+			UCSR1B=0x08;
+			while (( UCSR1A & (1 << UDRE1 )) == 0) {};
+			// Do nothing until UDR is ready for more data to be written to it
+			UDR1 =sendByte;
+			
+			for (i=0;i<255;i++)
+ 1f6:	80 91 04 01 	lds	r24, 0x0104
+ 1fa:	90 91 05 01 	lds	r25, 0x0105
+ 1fe:	01 96       	adiw	r24, 0x01	; 1
+ 200:	90 93 05 01 	sts	0x0105, r25
+ 204:	80 93 04 01 	sts	0x0104, r24
+ 208:	8f 3f       	cpi	r24, 0xFF	; 255
+ 20a:	91 05       	cpc	r25, r1
+ 20c:	84 f2       	brlt	.-96     	; 0x1ae <main+0xda>
+	UBRR1= 12;										   //BAud Rate 9600
+	while (1)
+	{	
+		//collect ADC values
+		adc_max=0;
+		for (j=0;j<100;j++)
+ 20e:	80 91 00 01 	lds	r24, 0x0100
+ 212:	90 91 01 01 	lds	r25, 0x0101
+ 216:	01 96       	adiw	r24, 0x01	; 1
+ 218:	90 93 01 01 	sts	0x0101, r25
+ 21c:	80 93 00 01 	sts	0x0100, r24
+ 220:	84 36       	cpi	r24, 0x64	; 100
+ 222:	91 05       	cpc	r25, r1
+ 224:	0c f4       	brge	.+2      	; 0x228 <main+0x154>
+ 226:	b4 cf       	rjmp	.-152    	; 0x190 <main+0xbc>
+				{
+					adc_max=ADC;
+				}	
+			}
+		}
+		adc_mean=adc_max;
+ 228:	80 90 06 01 	lds	r8, 0x0106
+ 22c:	90 90 07 01 	lds	r9, 0x0107
+ 230:	a0 90 08 01 	lds	r10, 0x0108
+ 234:	b0 90 09 01 	lds	r11, 0x0109
+ 238:	80 92 0a 01 	sts	0x010A, r8
+ 23c:	90 92 0b 01 	sts	0x010B, r9
+ 240:	a0 92 0c 01 	sts	0x010C, r10
+ 244:	b0 92 0d 01 	sts	0x010D, r11
+		//PWM
+		if(adc_mean>0x118)	// 0.7V
+ 248:	89 e1       	ldi	r24, 0x19	; 25
+ 24a:	88 16       	cp	r8, r24
+ 24c:	81 e0       	ldi	r24, 0x01	; 1
+ 24e:	98 06       	cpc	r9, r24
+ 250:	a1 04       	cpc	r10, r1
+ 252:	b1 04       	cpc	r11, r1
+ 254:	f8 f0       	brcs	.+62     	; 0x294 <main+0x1c0>
+		{
+			OCR1A=71;	
+ 256:	eb 01       	movw	r28, r22
+ 258:	f9 82       	std	Y+1, r15	; 0x01
+ 25a:	e8 82       	st	Y, r14
+	#else
+		//round up by default
+		__ticks_dc = (uint32_t)(ceil(fabs(__tmp)));
+	#endif
+
+	__builtin_avr_delay_cycles(__ticks_dc);
+ 25c:	df ef       	ldi	r29, 0xFF	; 255
+ 25e:	81 ee       	ldi	r24, 0xE1	; 225
+ 260:	94 e0       	ldi	r25, 0x04	; 4
+ 262:	d1 50       	subi	r29, 0x01	; 1
+ 264:	80 40       	sbci	r24, 0x00	; 0
+ 266:	90 40       	sbci	r25, 0x00	; 0
+ 268:	e1 f7       	brne	.-8      	; 0x262 <main+0x18e>
+ 26a:	00 c0       	rjmp	.+0      	; 0x26c <main+0x198>
+ 26c:	00 00       	nop
+ 26e:	cf ef       	ldi	r28, 0xFF	; 255
+ 270:	d1 ee       	ldi	r29, 0xE1	; 225
+ 272:	84 e0       	ldi	r24, 0x04	; 4
+ 274:	c1 50       	subi	r28, 0x01	; 1
+ 276:	d0 40       	sbci	r29, 0x00	; 0
+ 278:	80 40       	sbci	r24, 0x00	; 0
+ 27a:	e1 f7       	brne	.-8      	; 0x274 <main+0x1a0>
+ 27c:	00 c0       	rjmp	.+0      	; 0x27e <main+0x1aa>
+ 27e:	00 00       	nop
+ 280:	9f ef       	ldi	r25, 0xFF	; 255
+ 282:	c1 ee       	ldi	r28, 0xE1	; 225
+ 284:	d4 e0       	ldi	r29, 0x04	; 4
+ 286:	91 50       	subi	r25, 0x01	; 1
+ 288:	c0 40       	sbci	r28, 0x00	; 0
+ 28a:	d0 40       	sbci	r29, 0x00	; 0
+ 28c:	e1 f7       	brne	.-8      	; 0x286 <main+0x1b2>
+ 28e:	00 c0       	rjmp	.+0      	; 0x290 <main+0x1bc>
+ 290:	00 00       	nop
+ 292:	27 c0       	rjmp	.+78     	; 0x2e2 <main+0x20e>
+			for(int i=0;i<3;i++)
+			_delay_ms(800);			//180 degree
+		}
+		else if(adc_mean>0xB4)	// 0.450V
+ 294:	85 eb       	ldi	r24, 0xB5	; 181
+ 296:	88 16       	cp	r8, r24
+ 298:	91 04       	cpc	r9, r1
+ 29a:	a1 04       	cpc	r10, r1
+ 29c:	b1 04       	cpc	r11, r1
+ 29e:	68 f0       	brcs	.+26     	; 0x2ba <main+0x1e6>
+		{
+			OCR1A=47;				//120 degree
+ 2a0:	eb 01       	movw	r28, r22
+ 2a2:	39 82       	std	Y+1, r3	; 0x01
+ 2a4:	28 82       	st	Y, r2
+ 2a6:	df ef       	ldi	r29, 0xFF	; 255
+ 2a8:	81 ee       	ldi	r24, 0xE1	; 225
+ 2aa:	94 e0       	ldi	r25, 0x04	; 4
+ 2ac:	d1 50       	subi	r29, 0x01	; 1
+ 2ae:	80 40       	sbci	r24, 0x00	; 0
+ 2b0:	90 40       	sbci	r25, 0x00	; 0
+ 2b2:	e1 f7       	brne	.-8      	; 0x2ac <main+0x1d8>
+ 2b4:	00 c0       	rjmp	.+0      	; 0x2b6 <main+0x1e2>
+ 2b6:	00 00       	nop
+ 2b8:	14 c0       	rjmp	.+40     	; 0x2e2 <main+0x20e>
+			_delay_ms(800);
+		}
+		else if(adc_mean>0x80) //0.25V
+ 2ba:	c1 e8       	ldi	r28, 0x81	; 129
+ 2bc:	8c 16       	cp	r8, r28
+ 2be:	91 04       	cpc	r9, r1
+ 2c0:	a1 04       	cpc	r10, r1
+ 2c2:	b1 04       	cpc	r11, r1
+ 2c4:	70 f0       	brcs	.+28     	; 0x2e2 <main+0x20e>
+		{
+				OCR1A=20;	
+ 2c6:	84 e1       	ldi	r24, 0x14	; 20
+ 2c8:	90 e0       	ldi	r25, 0x00	; 0
+ 2ca:	eb 01       	movw	r28, r22
+ 2cc:	99 83       	std	Y+1, r25	; 0x01
+ 2ce:	88 83       	st	Y, r24
+ 2d0:	9f ef       	ldi	r25, 0xFF	; 255
+ 2d2:	c1 ee       	ldi	r28, 0xE1	; 225
+ 2d4:	d4 e0       	ldi	r29, 0x04	; 4
+ 2d6:	91 50       	subi	r25, 0x01	; 1
+ 2d8:	c0 40       	sbci	r28, 0x00	; 0
+ 2da:	d0 40       	sbci	r29, 0x00	; 0
+ 2dc:	e1 f7       	brne	.-8      	; 0x2d6 <main+0x202>
+ 2de:	00 c0       	rjmp	.+0      	; 0x2e0 <main+0x20c>
+ 2e0:	00 00       	nop
+		}
+		else
+		{
+			
+		}
+			OCR1A=14;				//0   degree		
+ 2e2:	eb 01       	movw	r28, r22
+ 2e4:	19 83       	std	Y+1, r17	; 0x01
+ 2e6:	08 83       	st	Y, r16
+	};		
+ 2e8:	47 cf       	rjmp	.-370    	; 0x178 <main+0xa4>
+
+000002ea <_exit>:
+ 2ea:	f8 94       	cli
+
+000002ec <__stop_program>:
+ 2ec:	ff cf       	rjmp	.-2      	; 0x2ec <__stop_program>
